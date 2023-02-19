@@ -1,10 +1,20 @@
-
+import Square from './components/Square';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      Hello from react!
+    <div className="app">
+      <div className='grid'>
+        <Square />
+        <Square />
+        <Square />
+        <Square />
+        <Square />
+        <Square />
+        <Square />
+        <Square />
+        <Square />
+      </div>
     </div>
   );
 }
