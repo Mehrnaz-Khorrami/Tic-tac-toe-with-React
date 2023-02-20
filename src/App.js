@@ -52,6 +52,17 @@ function App() {
   
   const winner = foundWinner(state.positions);
 
+  function reset(){
+    setState({
+      player: 'CIRCLE',
+    positions : [
+      'EMPTY','EMPTY','EMPTY',
+      'EMPTY','EMPTY','EMPTY',
+      'EMPTY','EMPTY','EMPTY'
+    ]
+    });
+  }
+
   return (
     <div className="app">
       <div className='grid'>
@@ -65,7 +76,7 @@ function App() {
         <Square position={7} value={state.positions[7]} takeTurn={takeTurn} />
         <Square position={8} value={state.positions[8]} takeTurn={takeTurn} />
       </div>
-      {winner && <Result winner={winner} />}
+      {winner && <Result winner={winner} reset={reset} />}
     </div>
   );
 }
