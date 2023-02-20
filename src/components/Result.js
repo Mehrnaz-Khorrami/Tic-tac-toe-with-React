@@ -1,3 +1,5 @@
+import '../style/result.css'
+
 function Result({winner}) {
     return (
       <div className="result">

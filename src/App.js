@@ -65,7 +65,7 @@ function App() {
         <Square position={7} value={state.positions[7]} takeTurn={takeTurn} />
         <Square position={8} value={state.positions[8]} takeTurn={takeTurn} />
       </div>
-      <Result winner={winner} />
+      {winner && <Result winner={winner} />}
     </div>
   );
 }
