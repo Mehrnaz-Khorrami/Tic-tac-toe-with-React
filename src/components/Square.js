@@ -1,7 +1,9 @@
-function Square() {
+import '../style/square.css'
+
+function Square({position}) {
     return (
       <div className="square">
-        Square
+        {position}
       </div>
     );
   }
